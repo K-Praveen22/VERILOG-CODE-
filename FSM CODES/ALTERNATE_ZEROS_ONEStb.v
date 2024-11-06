@@ -28,7 +28,7 @@ module tb;
     #14 a=0;
     #14 a=1;
     #14 a=1;
-    #30 $finish;
+    #100 $finish;
   end
   
   initial begin 
