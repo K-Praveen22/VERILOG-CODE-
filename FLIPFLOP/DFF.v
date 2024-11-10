@@ -1,8 +1,10 @@
 // Code your design here
-module dff(
-  input d,clk,
-  output reg q);
-  always @(posedge clk)
-    begin q<=d;
-  end 
-endmodule
+module d_ff(output reg q, input d,clk,rst);
+  always @(posedge clk) begin
+    if(rst)
+      q<=0;
+    else
+      q<=d;
+  end
+  
+endmodule 
