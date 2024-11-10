@@ -1,11 +1,11 @@
 // Code your design here
 // Code your design here
 module jkff(
-  input j,k,clk,rst_n,
+  input j,k,clk,rst,
   output reg q,
   output q_bar);
   always @(posedge clk)
-    if (!rst_n)q<=0;
+    if (!rst)q<=0;
   else begin
     case({j,k})
       2'b00:q<=q;
